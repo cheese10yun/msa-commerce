@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+  rabbitmq:
+    container_name: commerce.rabbitmq
+    image: rabbitmq:3.7-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER = user
+      - RABBITMQ_DEFAULT_PASS = user
+    hostname: commerce
+    volumes:
+      - ./volumes/rabbitmq:/var/lib/rabbitmq
+
+  mysql_member:
+    container_name: commerce.member
+    image: mysql/mysql-server:5.7
+    environment:
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_DATABASE: "cheese"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
+      - "9090:3306"
+    volumes:
+      - ./volumes/mysql/member:/var/lib/mysql
+
+  mysql_order:
+    container_name: commerce.order
+    image: mysql/mysql-server:5.7
+    environment:
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_DATABASE: "cheese"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
+      - "9091:3306"
+    volumes:
+      - ./volumes/mysql/order:/var/lib/mysql
+
+  mysql_product:
+    container_name: commerce.product
+    image: mysql/mysql-server:5.7
+    environment:
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_DATABASE: "cheese"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
+      - "9092:3306"
+    volumes:
+      - ./volumes/mysql/product:/var/lib/mysql
