@@ -1,0 +1,10 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'commerce'
+
+include 'member'
+include 'order'
+include 'product'
