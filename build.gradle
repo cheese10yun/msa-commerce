@@ -49,6 +49,7 @@ subprojects {
         testCompile('org.springframework.boot:spring-boot-starter-test')
         implementation 'org.springframework.boot:spring-boot-starter'
         implementation 'org.springframework.boot:spring-boot-starter-web'
+        implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'
@@ -65,6 +66,7 @@ subprojects {
 project(':order-service') {
     dependencies {
 
+
     }
 }
 
@@ -77,7 +79,7 @@ project(':product-service') {
 
 project(':member-service') {
     dependencies {
-
+        compile project(':common')
     }
 
 }
