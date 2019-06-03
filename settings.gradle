@@ -5,6 +5,11 @@ pluginManagement {
 }
 rootProject.name = 'commerce'
 
-include 'member'
-include 'order'
-include 'product'
+include 'member-service'
+include 'order-service'
+include 'product-service'
+include 'cart-service'
+include 'api-gateway'
+include 'eureka'
+include 'config'
+include 'common'

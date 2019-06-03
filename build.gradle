@@ -47,7 +47,11 @@ subprojects {
     //전체 프로젝트에 공통으로 가지는 의존성을 추가 추가한다.
     dependencies {
         testCompile('org.springframework.boot:spring-boot-starter-test')
-        testCompile('org.springframework.boot:spring-boot-starter')
+        implementation 'org.springframework.boot:spring-boot-starter'
+
+        compileOnly 'org.projectlombok:lombok'
+        annotationProcessor 'org.projectlombok:lombok'
+
     }
 
     dependencyManagement {
@@ -57,20 +61,55 @@ subprojects {
     }
 }
 
-project(':order') {
+project(':order-service') {
     dependencies {
 
     }
 }
 
-project(':product') {
+project(':product-service') {
     dependencies {
 
     }
 
 }
 
-project(':member') {
+project(':member-service') {
+    dependencies {
+
+    }
+
+}
+
+project(':cart-service') {
+    dependencies {
+
+    }
+
+}
+
+project(':api-gateway') {
+    dependencies {
+
+    }
+
+}
+
+project(':eureka') {
+    dependencies {
+
+    }
+
+}
+
+project(':config') {
+    dependencies {
+
+    }
+
+}
+
+project(':common') {
     dependencies {
 
     }
