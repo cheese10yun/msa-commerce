@@ -5,8 +5,8 @@ services:
     container_name: commerce.rabbitmq
     image: rabbitmq:3.7-management
     ports:
-      - "5672:5672"
-      - "15672:15672"
+      - '5672:5672'
+      - '15672:15672'
     environment:
       - RABBITMQ_DEFAULT_USER = user
       - RABBITMQ_DEFAULT_PASS = user
@@ -19,33 +19,61 @@ services:
     image: mysql/mysql-server:5.7
     environment:
       MYSQL_ROOT_HOST: '%'
-      MYSQL_DATABASE: "cheese"
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: 'member'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
     ports:
-      - "9090:3306"
+      - '9090:3306'
     volumes:
-      - ./volumes/mysql/member:/var/lib/mysql
+      - './volumes/mysql/member:/var/lib/mysql'
+    command:
+      - 'mysqld'
+      - '--character-set-server=utf8mb4'
+      - '--collation-server=utf8mb4_unicode_ci'
 
   mysql_order:
     container_name: commerce.order
     image: mysql/mysql-server:5.7
     environment:
       MYSQL_ROOT_HOST: '%'
-      MYSQL_DATABASE: "cheese"
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: 'order'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
     ports:
-      - "9091:3306"
+      - '9091:3306'
     volumes:
-      - ./volumes/mysql/order:/var/lib/mysql
+      - './volumes/mysql/order:/var/lib/mysql'
+    command:
+      - 'mysqld'
+      - '--character-set-server=utf8mb4'
+      - '--collation-server=utf8mb4_unicode_ci'
 
   mysql_product:
     container_name: commerce.product
     image: mysql/mysql-server:5.7
     environment:
       MYSQL_ROOT_HOST: '%'
-      MYSQL_DATABASE: "cheese"
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: 'product'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
     ports:
-      - "9092:3306"
+      - '9092:3306'
     volumes:
-      - ./volumes/mysql/product:/var/lib/mysql
+      - './volumes/mysql/product:/var/lib/mysql'
+    command:
+      - 'mysqld'
+      - '--character-set-server=utf8mb4'
+      - '--collation-server=utf8mb4_unicode_ci'
+
+  mysql_cart:
+    container_name: commerce.cart
+    image: mysql/mysql-server:5.7
+    environment:
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_DATABASE: 'cart'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    ports:
+      - '9093:3306'
+    volumes:
+      - './volumes/mysql/cart:/var/lib/mysql'
+    command:
+      - 'mysqld'
+      - '--character-set-server=utf8mb4'
+      - '--collation-server=utf8mb4_unicode_ci'
