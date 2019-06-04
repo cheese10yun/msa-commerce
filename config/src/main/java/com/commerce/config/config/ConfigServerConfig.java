@@ -1,4 +1,4 @@
-package com.yun.commerce.config;
+package com.commerce.config.config;
 
 import org.springframework.cloud.config.server.EnableConfigServer;
 
