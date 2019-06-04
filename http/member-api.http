@@ -23,7 +23,7 @@ POST {{api-gateway}}//member-service/members
 Content-Type: application/json
 
 {
-  "email": "a1sd@asd.com"
+  "email": "a111sd@asd.com"
 }
 
 ###
