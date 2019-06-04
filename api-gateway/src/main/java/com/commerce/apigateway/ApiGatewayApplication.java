@@ -1,4 +1,4 @@
-package com.commerce.member;
+package com.commerce.apigateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
