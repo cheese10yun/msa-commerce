@@ -1,4 +1,4 @@
-package com.yun.commerce.member;
+package com.yun.commerce.member.domain;
 
 import com.yun.commerce.module.Email;
 import java.util.UUID;
@@ -10,11 +10,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import lombok.AccessLevel;
 import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "member")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Getter
 public class Member {
 
   @Id
@@ -24,7 +26,7 @@ public class Member {
   @AttributeOverride(name = "value", column = @Column(name = "email", nullable = false, unique = true, updatable = false, length = 50))
   private Email email;
 
-  @Builder
+  @Builder(builderMethodName = "signUp")
   public Member(Email email) {
     this.id = UUID.randomUUID().toString();
     this.email = email;
