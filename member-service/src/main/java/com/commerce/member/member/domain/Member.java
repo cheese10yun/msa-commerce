@@ -1,6 +1,6 @@
 package com.commerce.member.member.domain;
 
-import com.yun.commerce.module.Email;
+import com.commerce.common.module.Email;
 import java.util.UUID;
 import javax.persistence.AttributeOverride;
 import javax.persistence.Column;

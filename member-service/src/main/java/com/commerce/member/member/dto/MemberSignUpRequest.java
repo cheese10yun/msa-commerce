@@ -2,7 +2,7 @@ package com.commerce.member.member.dto;
 
 
 import com.commerce.member.member.domain.Member;
-import com.yun.commerce.module.Email;
+import com.commerce.common.module.Email;
 import javax.validation.constraints.NotNull;
 import lombok.AccessLevel;
 import lombok.Getter;

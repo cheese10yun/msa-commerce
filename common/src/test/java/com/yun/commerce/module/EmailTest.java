@@ -4,6 +4,7 @@ import static org.assertj.core.api.Java6Assertions.assertThat;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.nullValue;
 
+import com.commerce.common.module.Email;
 import org.junit.Assert;
 import org.junit.Test;
 

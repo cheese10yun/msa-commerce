@@ -1,4 +1,4 @@
-package com.yun.commerce.module;
+package com.commerce.common.module;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
