@@ -1,4 +1,4 @@
-package com.yun.commerce.global;
+package com.commerce.member.global;
 
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 

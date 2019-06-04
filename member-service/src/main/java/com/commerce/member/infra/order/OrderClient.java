@@ -1,4 +1,4 @@
-package com.yun.commerce.infra.order;
+package com.commerce.member.infra.order;
 
 
 import org.springframework.cloud.netflix.ribbon.RibbonClient;

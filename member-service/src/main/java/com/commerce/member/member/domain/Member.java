@@ -1,4 +1,4 @@
-package com.yun.commerce.member.domain;
+package com.commerce.member.member.domain;
 
 import com.yun.commerce.module.Email;
 import java.util.UUID;

@@ -18,3 +18,12 @@ Content-Type: application/json
 
 
 
+# 회원가입
+POST {{api-gateway}}//member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+###

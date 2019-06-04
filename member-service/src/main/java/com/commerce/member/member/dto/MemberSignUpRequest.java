@@ -1,6 +1,7 @@
-package com.yun.commerce.member.dto;
+package com.commerce.member.member.dto;
 
-import com.yun.commerce.member.domain.Member;
+
+import com.commerce.member.member.domain.Member;
 import com.yun.commerce.module.Email;
 import javax.validation.constraints.NotNull;
 import lombok.AccessLevel;

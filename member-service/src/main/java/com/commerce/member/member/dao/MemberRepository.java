@@ -1,6 +1,7 @@
-package com.yun.commerce.member.dao;
+package com.commerce.member.member.dao;
 
-import com.yun.commerce.member.domain.Member;
+
+import com.commerce.member.member.domain.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MemberRepository extends JpaRepository<Member, String> {

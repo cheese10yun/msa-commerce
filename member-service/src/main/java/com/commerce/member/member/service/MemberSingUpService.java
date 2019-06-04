@@ -1,8 +1,10 @@
-package com.yun.commerce.member.service;
+package com.commerce.member.member.service;
 
-import com.yun.commerce.member.dao.MemberRepository;
-import com.yun.commerce.member.domain.Member;
-import com.yun.commerce.member.dto.MemberSignUpRequest;
+import com.commerce.member.member.dao.MemberRepository;
+import com.commerce.member.member.domain.Member;
+import com.commerce.member.member.dto.MemberSignUpRequest;
+
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

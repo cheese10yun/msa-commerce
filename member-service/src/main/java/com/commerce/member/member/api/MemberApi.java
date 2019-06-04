@@ -1,8 +1,9 @@
-package com.yun.commerce.member.api;
+package com.commerce.member.member.api;
 
-import com.yun.commerce.member.domain.Member;
-import com.yun.commerce.member.dto.MemberSignUpRequest;
-import com.yun.commerce.member.service.MemberSingUpService;
+
+import com.commerce.member.member.domain.Member;
+import com.commerce.member.member.dto.MemberSignUpRequest;
+import com.commerce.member.member.service.MemberSingUpService;
 import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
