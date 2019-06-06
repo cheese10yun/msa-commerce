@@ -18,7 +18,7 @@ Content-Type: application/json
 
 
 
-# 회원가입
+# API 게이트 회원가입
 POST {{api-gateway}}//member-service/members
 Content-Type: application/json
 
