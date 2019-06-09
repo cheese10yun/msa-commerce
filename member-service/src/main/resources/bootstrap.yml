@@ -1,5 +1,5 @@
 server:
-  port: 8890
+  port: ${PORT:8890}
 
 spring:
   application.name: "member-service"
@@ -46,12 +46,20 @@ spring:
       uri: "http://localhost:8888"
 
     stream:
-      binders:
+      bindings:
         output:
-          destination: member-out
-        input:
           destination: member-in
-
+        input:
+          destination: member-out
+      rabbit:
+        bindings:
+          output:
+            producer:
+              exchangeType: direct
+              routingKeyExpression: '"#"'
+          input:
+            consumer:
+              exchangeType: direct
 
 
 logging:
