@@ -28,6 +28,11 @@ spring:
   jackson:
     date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
 
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
   data:
     web:
@@ -39,6 +44,15 @@ spring:
   cloud:
     config:
       uri: "http://localhost:8888"
+
+    stream:
+      binders:
+        output:
+          destination: member-out
+        input:
+          destination: member-in
+
+
 
 logging:
   level:

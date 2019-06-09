@@ -1,0 +1,23 @@
+server:
+  port: 8996
+
+
+spring:
+  application:
+    name: notificaion-server
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+
+  cloud:
+    stream:
+      binders:
+        output:
+          destination: member-in
+        input:
+          destination: member-out

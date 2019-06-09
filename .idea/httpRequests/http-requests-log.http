@@ -1,0 +1,532 @@
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a111111sd@asd.com"
+}
+
+<> 2019-06-10T015344.504.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-10T015129.200.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a111111sd@asd.com"
+}
+
+<> 2019-06-10T013703.200.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a111sd@asd.com"
+}
+
+<> 2019-06-10T013654.504.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-10T010831.200.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a111sd@asd.com"
+}
+
+<> 2019-06-10T010820.504.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a111sd@asd.com"
+}
+
+<> 2019-06-05T012036.200.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-05T012030.200.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-05T012007.404.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-05T010327.404.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-05T010324.200.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-05T120310.200.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T115332.404.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T115328.404.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T115134.404.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T114930.404.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T114808.200.json
+
+###
+
+POST http://192.168.0.3:8765/members
+Content-Type: application/json
+
+{
+  "email": "a11sd@asd.com"
+}
+
+<> 2019-06-04T112735.404.json
+
+###
+
+POST http://192.168.0.3:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a11sd@asd.com"
+}
+
+<> 2019-06-04T112725.404.json
+
+###
+
+GET http://127.0.0.1:8765/actuator
+Accept: application/vnd.spring-boot.actuator.v2+json
+
+<> 2019-06-04T112607.200.json
+
+###
+
+POST http://127.0.0.1:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T112523.404.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "a11sd@asd.com"
+}
+
+<> 2019-06-04T112515.500.json
+
+###
+
+POST http://192.168.0.3:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a11sd@asd.com"
+}
+
+<> 2019-06-04T112241.404.json
+
+###
+
+POST http://127.0.0.1:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T112208.404.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "a11sd@asd.com"
+}
+
+<> 2019-06-04T110937.200.json
+
+###
+
+POST http://127.0.0.1:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110933.404.json
+
+###
+
+POST http://127.0.0.1:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110910.404.json
+
+###
+
+POST http://127.0.0.1:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110909.404.json
+
+###
+
+POST http://192.168.0.3:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110830.404.json
+
+###
+
+POST http://192.168.0.3:8765/MEMBER-SERVICE/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110808.404.json
+
+###
+
+POST http://localhost:8765/MEMBER-SERVICE/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110558.404.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110532.404.json
+
+###
+
+POST http://localhost:8765i}}/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110452.404.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110439.200.json
+
+###
+
+POST http://localhost:8890/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110423.404.json
+
+###
+
+POST http://{{api}}/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+###
+
+POST http://{{api}}/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+###
+
+POST http://{{api_gateway}}/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+###
+
+POST http://{{api-gateway}}/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+###
+
+POST http://{{api-gateway}}/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+###
+
+POST http://127.0.0.1:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110246.404.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110212.404.json
+
+###
+
+POST http://localhost:8765/member-service/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T110141.404.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T104505.200.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T104326.500.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "a1sd@asd.com"
+}
+
+<> 2019-06-04T104320.200.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "asd@asd.com"
+}
+
+<> 2019-06-04T104313.500.json
+
+###
+
+POST http://localhost:8890/members
+Content-Type: application/json
+
+{
+  "email": "asd@asd.com"
+}
+
+<> 2019-06-04T102641.200.json
+
+###
+
