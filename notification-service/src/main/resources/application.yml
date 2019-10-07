@@ -1,0 +1,45 @@
+server:
+  port: 8996
+
+
+spring:
+  application:
+    name: notificaion-server
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: member-in
+        input:
+          destination: member-out
+      rabbit:
+        bindings:
+          output:
+            producer:
+              exchangeType: direct
+              routingKeyExpression: '"#"'
+          input:
+            consumer:
+              exchangeType: direct
+
+
+logging:
+  level:
+    root: info
+    org:
+      hibernate:
+        type: trace
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
